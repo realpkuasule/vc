@@ -19,4 +19,7 @@ exec "$SCRIPT_DIR/scripts/vc.sh" "$@"
 EOF
 chmod +x vc
 
-echo -e "${GREEN}✓ vc installed. Run: ./vc init${NC}"
+echo -e "${GREEN}✓ vc installed.${NC}"
+
+# Auto-run init so the user can start immediately
+bash vc init
